@@ -1,0 +1,24 @@
+<!-- -*- mode: XML -*- -->
+
+<launch>
+  <!-- Arguments -->
+
+
+  <!-- Launch files -->
+  <include file="/home/jacob/gitRepos/gazeTrackingWS/src/apriltags2_ros/apriltags2_ros/launch/continuous_detection_pupil.launch" />
+
+
+  <!-- Nodes -->
+  <!-- Pupil to ROS -->
+  <node pkg="pupil_ros_plugin" type="pupil_zmq_ros_pub.py" name="Pupil_ZMQ_ROS" args="localhost 50020"/>
+
+  <!-- SRL 
+  <node pkg="rachelDemo" type="demoMain.py" name="demoMain"/> -->
+
+
+  <!-- Set parameters -->  
+
+
+  <!-- Visualization -->
+  <!--<node pkg="image_pipeline" type="extract_images_sync" name="aprilDetections" args="image:=/pupil_capture/camera/image_raw" /> -->
+</launch>

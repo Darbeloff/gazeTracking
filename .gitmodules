@@ -4,3 +4,6 @@
 [submodule "src/image_pipeline"]
 	path = src/image_pipeline
 	url = https://github.com/ros-perception/image_pipeline.git
+[submodule "src/orb_slam_2_ros"]
+	path = src/orb_slam_2_ros
+	url = https://github.com/appliedAI-Initiative/orb_slam_2_ros.git
